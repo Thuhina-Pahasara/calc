@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* This keeps the heading and calculator stacked vertically */
+}
+
+.topic {
+    text-align: center;  /* Center align the header text */
+    margin-bottom: 90px;  /* Adds space between the header and the calculator */
+}
+
+.topic h1 {
+    color: purple;  /* Change the header color */
+    direction: rtl; /* If you want to change text direction, use 'rtl' (right-to-left) */
+}
+
+
+
+.calculator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 260px;
+    display: flex;
+    flex-direction: column; /* Keeps the buttons stacked */
+}
+
+.display {
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    font-size: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
+.btn:active {
+    background-color: #d0d0d0;
+}
